@@ -1,0 +1,86 @@
+{
+    "listURL": "http://ovunque.tv:2300/get.php?username=online0032&password=G9izjEpHtz&type=m3u_plus&output=ts",
+    
+    "pathToPlaylists":"./playlists",
+    "pathToPlaylistsREAL":"/var/www/html",
+
+    "pathToSettings":".",
+    "pathToSettingsREAL":"/home/osmc/.kodi/userdata/addon_data/plugin.video.playlistLoader",
+    
+    "playlistsBaseURL":"http://127.0.0.1:82",
+    
+    "discardGroupPatterns": [
+        "Serie Tv",
+        "Hockey",
+        "Film In 3D",
+        "Non Udenti",
+        "SERIE TV VINTAGE"
+    ],
+
+    "discardNamePatterns":[
+        "Por\\.3d.*",
+        "Sky 3d Cinema.*",
+        "Ken Il.*",
+        "Ken\\.Il.*",
+        "Abbonamento Scaduto",
+        "==I Misteri Di Laura==",
+        "I Cavallieri.*",
+        "Jeeg\\..*",
+        "WWE .*",
+        "Skysport.*"
+    ],
+
+    "groupToGroupOverrides":[
+        {
+            "sourceGroup":"Hot Live",
+            "targetGroup":"XXX"
+        }
+    ],
+
+    "nameToGroupOverrides":[
+        {
+            "namePattern":"Barbapap.*",
+            "targetGroup":"Cartoni"
+        },
+        {
+            "namePattern":"Candy\\.Candy.*",
+            "targetGroup":"Cartoni"
+        },
+        {
+            "namePattern":"Peppa Pig.*",
+            "targetGroup":"Cartoni"
+        },
+        {
+            "namePattern":"Peppa\\.Pig.*",
+            "targetGroup":"Cartoni"
+        },
+        {
+            "namePattern":"Sailor\\.Moon.*",
+            "targetGroup":"Cartoni"
+        },
+        {
+            "namePattern":"Sailor Moon.*",
+            "targetGroup":"Cartoni"
+        },
+        {
+            "namePattern":"Mia\\.and\\.me.*",
+            "targetGroup":"Cartoni"
+        },
+        {
+            "namePattern":"Sky Primafila Hot Club.*",
+            "targetGroup":"Xxx"
+        },
+        {
+            "namePattern":"Sky Go.*",
+            "targetGroup":"Sky_go"
+        },
+        {
+            "namePattern":"SkySport.*",
+            "targetGroup":"Sky_sport"
+        },
+        {
+            "namePattern":"Xxx .*",
+            "targetGroup":"XXX"
+        }
+    ]
+}
