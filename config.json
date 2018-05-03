@@ -10,24 +10,44 @@
     "playlistsBaseURL":"http://127.0.0.1:82",
     
     "discardGroupPatterns": [
-        "Serie Tv",
-        "Hockey",
-        "Film In 3D",
-        "Non Udenti",
-        "SERIE TV VINTAGE"
+        "serie tv",
+        "hockey",
+        "film in 3d",
+        "non udenti",
+        "serie tv vintage",
+        "turkia",
+        "belgio",
+        "brasile",
+        "arabi",
+        "portoghesi",
+        "francia",
+        "germania",
+        "albania",
+        "canada",
+        "olanda",
+        "grecia",
+        "africa",
+        "bein sport.*",
+        "romania",
+        "ex yu",
+        "ungrouped"
     ],
 
     "discardNamePatterns":[
-        "Por\\.3d.*",
-        "Sky 3d Cinema.*",
-        "Ken Il.*",
-        "Ken\\.Il.*",
+        "por\\.3d.*",
+        "sky 3d cinema.*",
+        "ken[\\. ]il.*",
         "Abbonamento Scaduto",
-        "==I Misteri Di Laura==",
-        "I Cavallieri.*",
-        "Jeeg\\..*",
-        "WWE .*",
-        "Skysport.*"
+        "==I Misteri.*",
+        "i cavallieri.*",
+        "jeeg\\..*",
+        "wwe .*",
+        "skysport.*",
+        "\\[ DK \\].*",
+        "\\[ FIN \\].*",
+        "\\[ CN \\].*",
+        "\\[ AU \\].*",
+        "\\[ AZ \\].*"
     ],
 
     "groupToGroupOverrides":[
@@ -63,7 +83,7 @@
             "targetGroup":"Cartoni"
         },
         {
-            "namePattern":"Mia\\.and\\.me.*",
+            "namePattern":"Mia\\.and\\.Me.*",
             "targetGroup":"Cartoni"
         },
         {

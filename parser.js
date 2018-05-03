@@ -61,13 +61,13 @@ exports.applyRules = function(channels, config) {
 applyDiscardRules = function(channel, config) {
     for (let i = 0; i < config.discardNamePatterns.length; i++) {
         let entry = config.discardNamePatterns[i];
-        if (channel.header.name.match(entry)) {
+        if (channel.header.name.match(new RegExp(entry, "i"))) {
             return true;
         }
     }
     for (let i = 0; i < config.discardGroupPatterns.length; i++) {
         let entry = config.discardGroupPatterns[i];
-        if (channel.header.group == entry) {
+        if (channel.header.group.match(new RegExp(entry, "i"))) {
             return true;
         }
     }
@@ -76,7 +76,7 @@ applyDiscardRules = function(channel, config) {
 
 applyGroupToGroupOverrides = function(channel, groupToGroupOverrides) {
     groupToGroupOverrides.forEach(override => {
-        if (channel.header.group.match(override.sourceGroup)) {
+        if (channel.header.group.match(new RegExp(override.sourceGroup, "i"))) {
             channel.header.group = override.targetGroup;
         }
     });
@@ -84,7 +84,7 @@ applyGroupToGroupOverrides = function(channel, groupToGroupOverrides) {
 
 applyNameToGroupOverrides = function(channel, nameToGroupOverrides) {
     nameToGroupOverrides.forEach(override => {
-        if (channel.header.name.match(override.namePattern)) {
+        if (channel.header.name.match(new RegExp(override.namePattern, "i"))) {
             channel.header.group = override.targetGroup;
         }
     });
